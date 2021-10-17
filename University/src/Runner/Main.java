@@ -8,31 +8,7 @@ public class Main {
     public static void main(String[] args) {
         University myUniversity = new University();
         System.out.println("Welcome \n \n Choose an option:");
-
-        myUniversity.setTeachersList(new FullTimeTeacher("Ana Alegria",4000, 4, 40 ));
-        myUniversity.setTeachersList(new FullTimeTeacher("Pepito Perez",2000, 1, 40 ));
-        myUniversity.setTeachersList(new PartTimeTeacher("Juan Tanamera",4000, 4, 40 ));
-        myUniversity.setTeachersList(new PartTimeTeacher("Ali Cate",2000, 1, 40 ));
-        myUniversity.setSchoolClassesList(new SchoolClasses("Math", "405", myUniversity.assignTeacher(0)));
-        myUniversity.setSchoolClassesList(new SchoolClasses("English", "402", myUniversity.assignTeacher(1)));
-        myUniversity.setSchoolClassesList(new SchoolClasses("Spanish", "101", myUniversity.assignTeacher(2)));
-        myUniversity.setSchoolClassesList(new SchoolClasses("Computation Science", "203", myUniversity.assignTeacher(3)));
-
-        myUniversity.getStudentList().add(new Student("Rafa Gorgory", 20));
-        myUniversity.getStudentList().add(new Student("Bar Sinson", 22));
-        myUniversity.getStudentList().add(new Student("Karl Smith", 21));
-        myUniversity.getStudentList().add(new Student("Wendy Sulca", 28));
-        myUniversity.getStudentList().add(new Student("Ivan Duque", 45));
-        myUniversity.getStudentList().add(new Student("Teresa Suarez", 33));
-
-        myUniversity.getSchoolClassesList().get(0).studentToClass(myUniversity.getStudentList().get(0));
-        myUniversity.getSchoolClassesList().get(0).studentToClass(myUniversity.getStudentList().get(1));
-        myUniversity.getSchoolClassesList().get(1).studentToClass(myUniversity.getStudentList().get(2));
-        myUniversity.getSchoolClassesList().get(1).studentToClass(myUniversity.getStudentList().get(3));
-        myUniversity.getSchoolClassesList().get(2).studentToClass(myUniversity.getStudentList().get(4));
-        myUniversity.getSchoolClassesList().get(2).studentToClass(myUniversity.getStudentList().get(5));
-        myUniversity.getSchoolClassesList().get(3).studentToClass(myUniversity.getStudentList().get(0));
-        myUniversity.getSchoolClassesList().get(3).studentToClass(myUniversity.getStudentList().get(1));
+        myUniversity.communityCreation();
         Scanner scanner = new Scanner(System.in);
         String selection;
         int classSelection;
